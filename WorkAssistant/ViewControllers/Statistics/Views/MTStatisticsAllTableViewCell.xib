@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="MTStatisticsAllTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="Xzx-G8-9EZ">
+                        <rect key="frame" x="31" y="40" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="Hml-I6-ILG"/>
+                            <constraint firstAttribute="height" constant="28" id="IZl-BE-0gG"/>
+                        </constraints>
+                    </imageView>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JMv-lr-Poh">
+                        <rect key="frame" x="76" y="66" width="248" height="2"/>
+                        <color key="tintColor" red="0.99215686270000003" green="0.41960784309999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overtime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCB-vz-tM4">
+                        <rect key="frame" x="76" y="40" width="52" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBa-dT-kVT">
+                        <rect key="frame" x="302" y="39" width="22" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99215686270000003" green="0.41960784309999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aCB-vz-tM4" firstAttribute="leading" secondItem="JMv-lr-Poh" secondAttribute="leading" id="69V-15-LsR"/>
+                    <constraint firstItem="Xzx-G8-9EZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FHW-IS-Ifz"/>
+                    <constraint firstItem="aCB-vz-tM4" firstAttribute="top" secondItem="Xzx-G8-9EZ" secondAttribute="top" id="N65-qM-l3C"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JMv-lr-Poh" secondAttribute="trailing" constant="12" id="lNg-Fz-IWw"/>
+                    <constraint firstItem="JMv-lr-Poh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="60" id="llx-Vc-Hlk"/>
+                    <constraint firstItem="Xzx-G8-9EZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="oYx-mL-bNq"/>
+                    <constraint firstItem="JMv-lr-Poh" firstAttribute="bottom" secondItem="Xzx-G8-9EZ" secondAttribute="bottom" id="qIw-bH-kDo"/>
+                    <constraint firstItem="VBa-dT-kVT" firstAttribute="trailing" secondItem="JMv-lr-Poh" secondAttribute="trailing" id="yS5-D8-XPo"/>
+                    <constraint firstItem="VBa-dT-kVT" firstAttribute="centerY" secondItem="aCB-vz-tM4" secondAttribute="centerY" id="yoB-Tn-h7q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="biliLable" destination="VBa-dT-kVT" id="3uO-A4-1cG"/>
+                <outlet property="headImage" destination="Xzx-G8-9EZ" id="DSO-jb-yyn"/>
+                <outlet property="nameLable" destination="aCB-vz-tM4" id="Q5q-ls-8oo"/>
+                <outlet property="proGress" destination="JMv-lr-Poh" id="BdB-FA-DMG"/>
+            </connections>
+            <point key="canvasLocation" x="294" y="34"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="11" width="57" height="57"/>
+    </resources>
+</document>

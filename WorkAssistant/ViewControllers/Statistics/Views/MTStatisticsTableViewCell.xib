@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="337" id="KGk-i7-Jjw" customClass="MTStatisticsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="337"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="336.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhF-Cy-Whd">
+                        <rect key="frame" x="367" y="31" width="54" height="26"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="ZF2-hW-bBL"/>
+                            <constraint firstAttribute="width" constant="54" id="kGS-Nd-gR6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Day">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="dayBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dEj-lH-vcK"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv1-ur-HBG">
+                        <rect key="frame" x="298" y="31" width="54" height="26"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="LEB-jR-Z2S"/>
+                            <constraint firstAttribute="width" constant="54" id="yrt-yR-12g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Week">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="weekBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Cnz-kS-qHM"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaR-fc-cAm">
+                        <rect key="frame" x="229" y="31" width="54" height="26"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.41960784313725491" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="LV3-A8-Fts"/>
+                            <constraint firstAttribute="height" constant="26" id="XsT-mL-CKU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Month">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="monthBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5zH-Vr-LKy"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total revenue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oY0-fa-SO9">
+                        <rect key="frame" x="59" y="99" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,100.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L86-eR-Tug">
+                        <rect key="frame" x="161" y="94" width="122" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" red="0.99215686270000003" green="0.41960784309999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dj8-VA-dkk">
+                        <rect key="frame" x="20" y="149" width="411" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="4Rn-Wh-hy8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L86-eR-Tug" firstAttribute="centerY" secondItem="oY0-fa-SO9" secondAttribute="centerY" id="338-CG-fL0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xhF-Cy-Whd" secondAttribute="trailing" constant="10" id="FV5-6f-pf9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Dj8-VA-dkk" secondAttribute="trailing" id="HQI-NC-fla"/>
+                    <constraint firstItem="xhF-Cy-Whd" firstAttribute="leading" secondItem="Xv1-ur-HBG" secondAttribute="trailing" constant="15" id="P5k-DF-iyi"/>
+                    <constraint firstItem="oY0-fa-SO9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="88" id="QYH-Vf-9s4"/>
+                    <constraint firstItem="Dj8-VA-dkk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="V8P-1f-xJw"/>
+                    <constraint firstItem="MaR-fc-cAm" firstAttribute="centerY" secondItem="Xv1-ur-HBG" secondAttribute="centerY" id="VpP-qp-BCk"/>
+                    <constraint firstItem="Xv1-ur-HBG" firstAttribute="leading" secondItem="MaR-fc-cAm" secondAttribute="trailing" constant="15" id="aad-yp-s7o"/>
+                    <constraint firstItem="L86-eR-Tug" firstAttribute="leading" secondItem="oY0-fa-SO9" secondAttribute="trailing" constant="10" id="b63-TD-sDE"/>
+                    <constraint firstItem="oY0-fa-SO9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="39" id="cOW-aL-sgc"/>
+                    <constraint firstItem="Xv1-ur-HBG" firstAttribute="centerY" secondItem="xhF-Cy-Whd" secondAttribute="centerY" id="iBl-4u-DVE"/>
+                    <constraint firstItem="xhF-Cy-Whd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="jJe-2x-TOx"/>
+                    <constraint firstItem="Dj8-VA-dkk" firstAttribute="top" secondItem="L86-eR-Tug" secondAttribute="bottom" constant="26" id="ktM-dB-wN2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="dayBtn" destination="xhF-Cy-Whd" id="YGb-wj-Do6"/>
+                <outlet property="monthBtn" destination="MaR-fc-cAm" id="2ks-2u-UCJ"/>
+                <outlet property="myBackView" destination="Dj8-VA-dkk" id="cch-eX-YQ3"/>
+                <outlet property="titalLable" destination="L86-eR-Tug" id="5LB-yS-1t9"/>
+                <outlet property="weekBtn" destination="Xv1-ur-HBG" id="uYc-t6-Vca"/>
+            </connections>
+            <point key="canvasLocation" x="63.5" y="-185.5"/>
+        </tableViewCell>
+    </objects>
+</document>
